@@ -32,16 +32,22 @@ Hint: use an IDE e.g. IntelliJ IDEA for easy execution
 
 Windows:
 java -classpath target\classes assignment.AppMain 
+Linux:
+java -classpath target/classes assignment.AppMain
 
 **Order two small coffee's:**
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small=2
+Linux:
+java -classpath target/classes assignment.AppMain coffee_small=2
 
 **Order one small and one medium coffee:**
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small=1,coffee_medium=1
+Linux:
+java -classpath target/classes assignment.AppMain coffee_small=1,coffee_medium=1
 
 The list of products is a comma separated list of (key=value)-pairs.
 The key is the product configuration and value is the quantity of products.  
@@ -50,6 +56,8 @@ The key is the product configuration and value is the quantity of products.
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small=1 loyaltyCard.properties
+Linux:
+java -classpath target/classes assignment.AppMain coffee_small=1 loyaltyCard.properties
 
 Hint: to add loyalty points create an empty file and add:
 coffee=2
@@ -60,11 +68,15 @@ counting of purchases for each item class/type.
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small/milk_extra=1
+Linux:
+java -classpath target/classes assignment.AppMain coffee_small/milk_extra=1
 
 **Order one small coffee with extra milk and special roast:**
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small/milk_extra/special_roast=1
+Linux:
+java -classpath target/classes assignment.AppMain coffee_small/milk_extra/special_roast=1
 
 #### Alternative Dirty solution
 
@@ -72,6 +84,8 @@ java -classpath target\classes assignment.AppMain coffee_small/milk_extra/specia
 
 Windows:
 java -classpath target\classes alternative.DirtySolution coffee_small=1 4
+Linux:
+java -classpath target/classes alternative.DirtySolution coffee_small=1 4
 
 it expects at least one argument. The first argument is identical 
 with the complete solution. The second argument is the count of
@@ -79,6 +93,7 @@ already collected Loyalty Points.
 
 ## Assumptions for complete solution
 
+* Maven was used for dependency management
 * VAT and taxes have been ignored 
 * Ordering a product with extras only permits one extra per item class.
   This means a coffee can be ordered either with Extra milk or Foamed milk but not both.
