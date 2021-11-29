@@ -1,0 +1,9 @@
+key,displayName,salesPrice,itemClass
+coffee_small,Coffee small,2.50,coffee
+coffee_medium,Coffee medium,3.00,coffee
+coffee_large,Coffee large,3.50,coffee
+bacon_roll,Bacon Roll,4.50,food
+orange_juice,Freshly squeezed orange juice (0.25l),3.95,soft_drink
+milk_extra,Extra Milk,0.30,milk
+milk_foamed,Foamed Milk,0.50,milk
+special_roast,Special roast coffee,0.90,coffee_blend
