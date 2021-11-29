@@ -30,38 +30,34 @@ Hint: use an IDE e.g. IntelliJ IDEA for easy execution
 
 **Display command line help by starting without arguments:**
 
-Windows:
-java -classpath target\classes assignment.AppMain 
-
-Linux:
-java -classpath target/classes assignment.AppMain
+Windows:<br/>
+java -classpath target\classes assignment.AppMain<br/>
+Linux:<br/>
+java -classpath target/classes assignment.AppMain<br/>
 
 **Order two small coffee's:**
 
-Windows:
-java -classpath target\classes assignment.AppMain coffee_small=2
-
-Linux:
-java -classpath target/classes assignment.AppMain coffee_small=2
+Windows:<br/>
+java -classpath target\classes assignment.AppMain coffee_small=2<br/>
+Linux:<br/>
+java -classpath target/classes assignment.AppMain coffee_small=2<br/>
 
 **Order one small and one medium coffee:**
 
-Windows:
-java -classpath target\classes assignment.AppMain coffee_small=1,coffee_medium=1
-
-Linux:
-java -classpath target/classes assignment.AppMain coffee_small=1,coffee_medium=1
+Windows:<br/>
+java -classpath target\classes assignment.AppMain coffee_small=1,coffee_medium=1<br/>
+Linux:<br/>
+java -classpath target/classes assignment.AppMain coffee_small=1,coffee_medium=1<br/>
 
 The list of products is a comma separated list of (key=value)-pairs.
 The key is the product configuration and value is the quantity of products.  
 
 **Order one small coffee and present a loyalty card:**
 
-Windows:
-java -classpath target\classes assignment.AppMain coffee_small=1 loyaltyCard.properties
-
-Linux:
-java -classpath target/classes assignment.AppMain coffee_small=1 loyaltyCard.properties
+Windows:<br/>
+java -classpath target\classes assignment.AppMain coffee_small=1 loyaltyCard.properties<br/>
+Linux:<br/>
+java -classpath target/classes assignment.AppMain coffee_small=1 loyaltyCard.properties<br/>
 
 Hint: to add loyalty points create an empty file and add:
 coffee=2
@@ -70,29 +66,26 @@ counting of purchases for each item class/type.
 
 **Order one small coffee with extra milk:**
 
-Windows:
-java -classpath target\classes assignment.AppMain coffee_small/milk_extra=1
-
-Linux:
+Windows:<br/>
+java -classpath target\classes assignment.AppMain coffee_small/milk_extra=1<br/>
+Linux:<br/>
 java -classpath target/classes assignment.AppMain coffee_small/milk_extra=1
 
 **Order one small coffee with extra milk and special roast:**
 
-Windows:
-java -classpath target\classes assignment.AppMain coffee_small/milk_extra/special_roast=1
-
-Linux:
-java -classpath target/classes assignment.AppMain coffee_small/milk_extra/special_roast=1
+Windows:<br/>
+java -classpath target\classes assignment.AppMain coffee_small/milk_extra/special_roast=1<br/>
+Linux:<br/>
+java -classpath target/classes assignment.AppMain coffee_small/milk_extra/special_roast=1<br/>
 
 #### Alternative Dirty solution
 
 **The dirty solution can be started with:**
 
-Windows:
-java -classpath target\classes alternative.DirtySolution coffee_small=1 4
-
-Linux:
-java -classpath target/classes alternative.DirtySolution coffee_small=1 4
+Windows:<br/>
+java -classpath target\classes alternative.DirtySolution coffee_small=1 4<br/>
+Linux:<br/>
+java -classpath target/classes alternative.DirtySolution coffee_small=1 4<br/>
 
 it expects at least one argument. The first argument is identical 
 with the complete solution. The second argument is the count of
