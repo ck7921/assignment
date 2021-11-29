@@ -12,6 +12,9 @@ import java.time.format.DateTimeFormatter;
 /**
  * Rendering receipts to the given stream.
  * For more details please read {@link assignment.receipt.ReceiptRenderer}
+ *
+ * This render can make use of optional Header and Footer
+ * (similar to a little tempalte engine)
  */
 class ConsoleReceiptRenderer implements ReceiptRenderer {
 
@@ -21,7 +24,7 @@ class ConsoleReceiptRenderer implements ReceiptRenderer {
     private int totalWidthInCharacters = minimalWidthInCharacters;
     private Charset outputCharset = StandardCharsets.UTF_8;
     private String lineBreak = "\n";
-    private String timestampPattern = "YYYY-MM-DD HH:mm";
+    private String timestampPattern = "YYYY-MM-dd HH:mm";
     private ZoneId timeZone = ZoneId.of("Europe/Zurich");
 
     private int countFieldLen = 5;
@@ -77,8 +80,10 @@ class ConsoleReceiptRenderer implements ReceiptRenderer {
                 .withZone(timeZone);
         final PrintWriter writer = new PrintWriter(out,true, outputCharset);
 
-        writer.print(header);
-        writer.print(lineBreak);
+        if(header!=null) {
+            writer.print(header);
+            writer.print(lineBreak);
+        }
         writer.print(lineBreak);
 
         writer.print("Receipt Id: ");
@@ -118,8 +123,10 @@ class ConsoleReceiptRenderer implements ReceiptRenderer {
                 .forEach(writer::println);
 
         writer.print(lineBreak);
-        writer.print(footer);
-        writer.print(lineBreak);
+        if(footer!=null) {
+            writer.print(footer);
+            writer.print(lineBreak);
+        }
 
         writer.flush();
     }
