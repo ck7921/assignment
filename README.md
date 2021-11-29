@@ -32,6 +32,7 @@ Hint: use an IDE e.g. IntelliJ IDEA for easy execution
 
 Windows:
 java -classpath target\classes assignment.AppMain 
+
 Linux:
 java -classpath target/classes assignment.AppMain
 
@@ -39,6 +40,7 @@ java -classpath target/classes assignment.AppMain
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small=2
+
 Linux:
 java -classpath target/classes assignment.AppMain coffee_small=2
 
@@ -46,6 +48,7 @@ java -classpath target/classes assignment.AppMain coffee_small=2
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small=1,coffee_medium=1
+
 Linux:
 java -classpath target/classes assignment.AppMain coffee_small=1,coffee_medium=1
 
@@ -56,6 +59,7 @@ The key is the product configuration and value is the quantity of products.
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small=1 loyaltyCard.properties
+
 Linux:
 java -classpath target/classes assignment.AppMain coffee_small=1 loyaltyCard.properties
 
@@ -68,6 +72,7 @@ counting of purchases for each item class/type.
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small/milk_extra=1
+
 Linux:
 java -classpath target/classes assignment.AppMain coffee_small/milk_extra=1
 
@@ -75,6 +80,7 @@ java -classpath target/classes assignment.AppMain coffee_small/milk_extra=1
 
 Windows:
 java -classpath target\classes assignment.AppMain coffee_small/milk_extra/special_roast=1
+
 Linux:
 java -classpath target/classes assignment.AppMain coffee_small/milk_extra/special_roast=1
 
@@ -84,6 +90,7 @@ java -classpath target/classes assignment.AppMain coffee_small/milk_extra/specia
 
 Windows:
 java -classpath target\classes alternative.DirtySolution coffee_small=1 4
+
 Linux:
 java -classpath target/classes alternative.DirtySolution coffee_small=1 4
 
